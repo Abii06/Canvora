@@ -223,13 +223,13 @@ const Upload = () => {
                         <div>
                             <label className="block text-sm font-medium text-gray-300 mb-2">Price (INR)</label>
                             <div className="relative">
-                                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">Rs.</span>
+                                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">Rs. </span>
                                 <input
                                     type="number"
                                     value={price}
                                     onChange={(e) => setPrice(e.target.value)}
                                     placeholder="0.00"
-                                    className="w-full bg-black/20 border border-white/10 rounded-xl pl-8 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                                    className="w-full bg-black/20 border border-white/10 rounded-xl pl-14 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                                 />
                             </div>
                         </div>

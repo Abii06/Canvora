@@ -62,12 +62,12 @@ const Auth = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
 
                     <div className="absolute bottom-12 left-12 right-12 z-20">
-                        <div className="flex items-center gap-4 mb-6">
-                            <div className="p-3 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+                        <Link to="/" className="flex items-center gap-4 mb-6 group cursor-pointer">
+                            <div className="p-3 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 group-hover:bg-white/20 transition-all">
                                 <Palette className="h-8 w-8 text-white" />
                             </div>
                             <span className="text-3xl font-black text-white tracking-tighter">CANVORA</span>
-                        </div>
+                        </Link>
                         <h1 className="text-5xl font-black text-white leading-tight mb-4">
                             Unleash Your <br />
                             <span className="text-primary italic">Creative Soul</span>
@@ -86,11 +86,11 @@ const Auth = () => {
 
                 {/* Right Panel - Form */}
                 <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center bg-black/20">
-                    <div className="md:hidden text-center mb-10">
-                        <div className="inline-flex items-center justify-center p-4 bg-gradient-to-tr from-primary to-secondary rounded-2xl mb-6">
+                    <Link to="/" className="md:hidden text-center mb-10 flex flex-col items-center">
+                        <div className="inline-flex items-center justify-center p-4 bg-gradient-to-tr from-primary to-secondary rounded-2xl mb-6 shadow-lg shadow-primary/20">
                             <Palette className="h-8 w-8 text-white" />
                         </div>
-                    </div>
+                    </Link>
 
                     <div className="mb-10 text-center md:text-left">
                         <h2 className="text-4xl font-black text-white mb-3">

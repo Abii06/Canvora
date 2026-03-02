@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const Footer = () => {
     const location = useLocation();
 
-    // Completely hide footer on all pages except the home page
-    if (location.pathname !== '/') return null;
+    // Show footer on all pages
+    // if (location.pathname !== '/') return null;
 
     return (
         <footer className="bg-background border-t border-white/5 py-6">
@@ -42,9 +42,9 @@ const Footer = () => {
                         {/* Social Media Icons */}
                         <div className="flex items-center gap-3">
                             {[
-                                { icon: Instagram, link: 'https://instagram.com/canvora', color: 'hover:text-pink-500' },
-                                { icon: Facebook, link: 'https://facebook.com/canvora', color: 'hover:text-blue-500' },
-                                { icon: Github, link: 'https://github.com/canvora', color: 'hover:text-white' }
+                                { icon: Instagram, link: 'https://instagram.com', color: 'hover:text-pink-500' },
+                                { icon: Facebook, link: 'https://facebook.com', color: 'hover:text-blue-500' },
+                                { icon: Github, link: 'https://github.com', color: 'hover:text-white' }
                             ].map((social, i) => (
                                 <a
                                     key={i}

@@ -105,7 +105,7 @@ const Marketplace = () => {
                                     className="bg-surface rounded-2xl overflow-hidden border border-white/5 group"
                                 >
                                     <div className="relative aspect-[4/5] bg-gray-800 overflow-hidden">
-                                        <div className="absolute top-4 right-4 z-10 flex gap-2">
+                                        <div className="absolute top-4 right-4 z-30 flex gap-2">
                                             {!user || product.artist?._id !== user._id ? (
                                                 <button
                                                     onClick={(e) => handleWishlistToggle(e, product)}
@@ -128,7 +128,7 @@ const Marketplace = () => {
                                             )}
                                         </div>
 
-                                        {/* Sold Out Overlay */}
+                                        {/* Out of Stock Overlay */}
                                         {isSoldOut && (
                                             <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-10 pointer-events-none">
                                                 <motion.div
@@ -136,7 +136,7 @@ const Marketplace = () => {
                                                     animate={{ scale: 1, opacity: 1 }}
                                                     className="bg-red-500 text-white font-black text-sm tracking-tighter px-6 py-2.5 rounded-full shadow-[0_0_30px_rgba(239,68,68,0.5)] border-2 border-white/20"
                                                 >
-                                                    SOLD OUT
+                                                    OUT OF STOCK
                                                 </motion.div>
                                             </div>
                                         )}
@@ -155,9 +155,6 @@ const Marketplace = () => {
                                                 <div className="bg-primary/20 text-primary text-xs px-2 py-1 rounded-md font-medium">
                                                     {product.category}
                                                 </div>
-                                                {(product.copies - (product.soldCount || 0)) <= 0 && (
-                                                    <span className="text-[10px] bg-red-500/10 text-red-500 px-1.5 py-0.5 rounded border border-red-500/20 font-bold uppercase">Sold Out</span>
-                                                )}
                                             </div>
                                         </div>
                                         <p className="text-sm text-gray-400 mb-4">Owner: {product.artist?.name || 'Unknown'}</p>
@@ -165,9 +162,6 @@ const Marketplace = () => {
                                             <div>
                                                 <p className="text-xs text-gray-500">Price</p>
                                                 <p className="font-bold text-white">Rs. {product.price}</p>
-                                            </div>
-                                            <div className="flex items-center text-xs text-gray-400 gap-1">
-                                                <Heart className="h-3 w-3 fill-current text-secondary" /> {product.likes}
                                             </div>
                                         </div>
                                     </div>

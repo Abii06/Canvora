@@ -31,9 +31,9 @@ const Home = () => {
                             transition={{ duration: 1, ease: "circOut" }}
                             className="lg:col-span-7"
                         >
-                            <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] mb-8 lowercase">
+                            <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] mb-8">
                                 <span className="block text-white">Beyond</span>
-                                <span className="block text-primary italic ml-12 md:ml-24">the</span>
+                                <span className="block text-primary italic ml-12 md:ml-24">The</span>
                                 <span className="block text-white ml-6 md:ml-12 border-b-8 border-secondary pb-4">Canvas</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-gray-400 max-w-lg font-medium leading-relaxed mb-12 ml-6 md:ml-12">
@@ -74,12 +74,6 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Vertical Text Background */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden xl:block opacity-5 pointer-events-none">
-                    <span className="text-[20rem] font-black tracking-tighter vertical-text select-none text-white leading-none">
-                        MUSEUM
-                    </span>
-                </div>
             </section>
 
             {/* Asymmetrical Floating Gallery Section */}

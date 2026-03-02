@@ -34,7 +34,7 @@ const Wishlist = () => {
                                 className="bg-surface rounded-2xl overflow-hidden border border-white/5 group relative"
                             >
                                 <div className="relative aspect-[4/5] bg-gray-800 overflow-hidden">
-                                    <div className="absolute top-4 right-4 z-10">
+                                    <div className="absolute top-4 right-4 z-30">
                                         <button
                                             onClick={() => removeFromWishlist(item._id)}
                                             className="p-2 bg-red-500/20 backdrop-blur-md rounded-full hover:bg-red-500/40 transition-colors text-red-500"

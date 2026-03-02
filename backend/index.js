@@ -30,7 +30,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/requests', requestRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Artisaun Vault API is running');
+    res.send('Canvora API is running');
 });
 
 // Error Handler Middleware
